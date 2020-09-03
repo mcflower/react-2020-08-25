@@ -2,6 +2,7 @@ import React, { useState, useMemo } from 'react';
 import Menu from './menu';
 import Navigation from './navigation';
 import Rate from './rate';
+import Reviews from './reviews';
 
 export default function Restaurants(props) {
   const [activeId, setActiveId] = useState(props.restaurants[0].id);
@@ -19,6 +20,7 @@ export default function Restaurants(props) {
       />
       <Menu menu={activeRestaurant.menu} />
       <Rate reviews={activeRestaurant.reviews} />
+      <Reviews reviews={activeRestaurant.reviews} />
     </div>
   );
 }
