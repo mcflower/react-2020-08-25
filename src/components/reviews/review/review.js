@@ -21,4 +21,9 @@ Review.defaultProps = {
   user: 'Anonymous',
 };
 
+Review.propTypes = {
+  user: PropTypes.string,
+  text: PropTypes.string,
+};
+
 export default Review;

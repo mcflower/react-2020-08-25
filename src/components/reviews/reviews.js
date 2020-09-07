@@ -12,4 +12,8 @@ const Reviews = ({ reviews }) => {
   );
 };
 
+Reviews.propTypes = {
+  id: PropTypes.string.isRequired,
+};
+
 export default Reviews;
